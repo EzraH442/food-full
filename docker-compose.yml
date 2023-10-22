@@ -31,8 +31,9 @@ services:
     image: adminer
     restart: always
   nextjs:
-    build: ./nextjs
-    args:
-      DATABASE_PASSWORD: ${DATABASE_PASSWORD}
-      DB_HOST: db
+    build: 
+      context: ./food-review
+      args:
+        DATABASE_PASSWORD: ${DATABASE_PASSWORD}
+        DB_HOST: db
       SECRET_KEY: ${SECRET_KEY}
