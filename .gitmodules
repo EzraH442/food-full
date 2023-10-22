@@ -1,0 +1,3 @@
+[submodule "food-review"]
+	path = food-review
+	url = https://github.com/EzraH442/food-review.git
